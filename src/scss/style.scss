@@ -1,0 +1,337 @@
+body{
+margin: 0%;
+padding: 0%;
+min-width:100%;
+}
+.main{
+    background: url(../img/main/iceberg.jpg) no-repeat;
+    background-size: cover;
+    min-width:100%;
+    min-height: 190vw;
+    position: absolute;
+    &__wrapper_one{
+        font-size: 0.7em;
+        height: 52em;
+        padding-top: 11%;
+        width: 79%;
+        color: #0d319c;
+        margin: 0vw 0vw 0vw 6vw ;
+        letter-spacing: 0.2em;
+        &__h1{
+            letter-spacing: 0.055em;
+            font-size: 5.7em;
+        }
+        &__h31{
+            margin: -2vw 0vw 0vw 55vw ;
+        }
+        &__h32{
+            margin: 10vw 0vw 0vw 17vw ;
+        }
+        &__h33{
+            margin: 10vw 0vw 0vw 34vw ;
+        }
+        &__h34{
+            margin: -4vw 0vw 0vw 71vw ;
+        }
+        &__pulsar {
+            width: 3vw;
+            height: 3vw;
+            position: relative;
+        }
+        &__pulsar &__ring {
+            box-sizing: border-box;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border: 2px solid rgba(#ff0000,0.5);
+            box-shadow: inset 0 0 100px 0 rgba(#ff7300,0.5);
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            margin-top: -50%;
+            margin-left: -50%;
+            -webkit-transform: scale(0);
+            -moz-transform: scale(0);
+            -ms-transform: scale(0);
+            transform: scale(0);
+        }
+        &__pulsar &__ring:nth-child(1) {
+            animation: pulsar 2s  linear infinite;
+        }
+        &__pulsar &__ring:nth-child(2) {
+            animation: pulsar 2s 0.5s linear infinite;
+        }
+        &__pulsar &__ring:nth-child(3) {
+            animation: pulsar 0.5s  linear infinite;
+        }
+        &__pos1{
+            margin: -23vw 0vw 0vw 47.6vw ;
+        }
+        &__pos1 &__pulsar {
+            width: 6vw;
+            height: 6vw;
+        }
+        &__pos2{
+            margin: 9.5vw 0vw 0vw 19.5vw ;
+        }
+        &__pos2 &__pulsar {
+            width: 4.5vw;
+            height: 4.5vw;
+        }
+        &__pos3{
+            margin: 6.3vw 0vw 0vw 39.5vw ;
+        }
+        &__pos4{
+            margin: -5vw 0vw 0vw 72.5vw ;
+        }
+    }
+    &__wrapper_two{
+    background: url(../img/2sec/bits.png) no-repeat;
+    background-size: cover;
+    margin: 30vw 0vw 0vw 10vw;
+    min-width:79%;
+    min-height: 55vw;
+    &__h1{
+        padding-top: 15vw;
+        margin: 0vw 10vw 0vw 10vw;
+        text-align: center;
+        font-size: 4.5em;
+        letter-spacing: 0.08em;
+        color: #ffffff;
+    }
+    }
+    &__wrapper_trd{
+        height: 900px;
+        width: 99vw;
+        &__Slider{
+            margin-top: 10%;
+            height: 30vw;
+            width: 99vw;
+            text-align: center;
+            font-size: 1.5em;
+            letter-spacing: 0.08em;
+            color: #ffffff;
+            &__img{
+                margin: auto;
+            }
+        }
+        &__sample {
+            width: 98vw;
+            height: 1000px;
+            margin: 40vw -90vw -10vw 1vw;
+            &__slide{
+                margin: auto;
+                max-width: 510px;
+                max-height: 510px;
+                &__1{
+                    background: url(../img/3sec/slides/1.png) no-repeat;
+                    background-size: cover;
+                    max-width: 70vw;
+                    margin-left: 10vw;
+                }
+                &__2{
+                    background: url(../img/3sec/slides/2.png) no-repeat;
+                    background-size: cover;
+                    max-width: 70vw;
+                    margin-left: 20vw;
+                }
+                &__3{
+                    background: url(../img/3sec/slides/3.png) no-repeat;
+                    background-size: cover;
+                    max-width: 70vw;
+                }
+            }
+        }
+        &__range{
+            padding: 130px;
+            text-align: center;
+        }
+    }
+}
+.hed2{
+    text-align: left;
+    margin-left: 20vw;
+    font-size: 0.7em;
+}
+.nav{
+    width: 100px;
+    height: 200px;
+    position: fixed;
+    margin: 22.5vw 0vw 0vw 95vw;
+    &__Link{
+        cursor: pointer;
+    width: 15px;
+    height: 15px;
+    z-index: 1;
+    border-radius: 50%;
+        background: #ffffff;
+        margin-top: 1vw;
+        &__used{
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+            z-index: 1;
+            border-radius: 50%;
+            margin-top: 1vw;
+            background: #ff7300;
+        }
+    }
+}
+input[type=range] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent; 
+  }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+  input[type=range]::-moz-slider-thumb {
+    -moz-appearance: none;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 75px;
+    width: 55px;
+    background: url(../img/3sec/bitslide.png) no-repeat ;
+    cursor: pointer;
+    margin-top: -30px;
+  }
+  
+  input[type=range]::-moz-slider-thumb {
+    -moz-appearance: none;
+    height: 75px;
+    width: 55px;
+    background: url(../img/3sec/bitslide.png) no-repeat ;
+    cursor: pointer;
+    margin-top: -30px;
+  }
+  input[type=range]::-ms-slider-thumb {
+    -ms-appearance: none;
+    height: 75px;
+    width: 55px;
+    background: url(../img/3sec/bitslide.png) no-repeat ;
+    cursor: pointer;
+    margin-top: -30px;
+  }
+  /*Styling the track in Chrome*/
+  input[type=range]::-webkit-slider-runnable-track {
+    min-width: 100%;
+    height: 11px;
+    cursor: pointer;
+    background: #a8def7;
+  }
+  input[type=range]::-moz-slider-runnable-track {
+    min-width: 100%;
+    height: 11px;
+    cursor: pointer;
+    background: #a8def7;
+  }
+  .range{
+    min-width: 500px;
+  }
+.imgl::selection {
+    background: transparent;
+ }
+ .al::selection {
+    background: transparent;
+ }
+  .year{
+      display: inline-block;
+      margin: 4% 9%;
+      font-size: 1.1em;
+      letter-spacing: 0.09em;
+      color: #ffffff;
+  }
+  .link{
+      margin-top: 4%;
+      border-radius:90%;
+      background: #ffffff;
+      filter:blur(10px); 
+      height: 100px;
+  }
+ .imgl{
+     padding-top: 1%;
+     width: 5%;
+     height:30%;
+     margin-bottom: -2%;
+ }
+ .imgl:hover{
+     transform: translateY(3px);
+     transform:scale(1.2);
+
+}
+.fix{
+    width:1200px;
+    height: 100px;
+    position: fixed; 
+    text-align: center;
+    margin: 38% 0vw 0vw 8vw ;
+}
+.al{
+    text-decoration: none;
+    font-size: 1.1em;    
+    letter-spacing: 0.09em;
+    color: #ffffff;  
+}
+.hover{
+opacity: 0;
+margin: -16% 0vw 0vw -8vw ;
+}
+
+  
+@keyframes pulsar {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@media (min-width:1024px) and (min-height:768px){
+    .nav{
+        margin: 35vw 0vw 0vw 95vw;
+    }
+    .fix{
+        margin: 62% 0vw 0vw -4vw ;
+    }
+    .main__wrapper_one__h1{
+        font-size: 5em;
+    }
+    .main__wrapper_one__h31{
+        margin: 0vw 0vw 0vw 63vw ;
+    }
+    .main__wrapper_one__h32{
+        margin: 10vw 0vw 0vw 20vw ;
+    }
+    .main__wrapper_one__h33{
+        margin: 10vw 0vw 0vw 39vw ;
+    }
+    .main__wrapper_one__h34{
+        margin: -4.5vw 0vw 0vw 78vw ;
+    }
+    .main__wrapper_one__pos1{
+        margin: -26vw 0vw 0vw 55vw ;
+    }
+    .main__wrapper_one__pos2{
+        margin: 11.5vw 0vw 0vw 23vw ;
+    }
+    .main__wrapper_one__pos2{
+        margin: 11.5vw 0vw 0vw 23vw ;
+    }
+    .main__wrapper_one__pos3{
+        margin: 7.8vw 0vw 0vw 45.5vw ;
+    }
+    .main__wrapper_one__pos4{
+        margin: -5vw 0vw 0vw 82.7vw ;
+    }
+}
